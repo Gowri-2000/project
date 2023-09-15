@@ -8,7 +8,24 @@
             username : <input type="text" name="user"><br><br>
             password : <input type="password" name="pass"><br><br>
             <input type="submit" value="submit">
+            <!-- <input type="submit" value="show tree" formaction="treeresponse"> -->
+            <input type="submit" value="store database" formaction="">
         </form>
+
+            <table border="1">
+                <tr><th>S.no</th>
+                    <th>username</th>
+                    <th>password</th>
+                </tr>
+                {% for data in datas %}
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{data.username}}</td>
+                    <td>{{data.password}}</td>
+                </tr>
+                {% endfor %}  
+            </table>
+        
         
         </body>
     </html>

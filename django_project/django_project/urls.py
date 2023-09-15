@@ -26,6 +26,9 @@ urlpatterns = [
     #path('',views.sample_with_variable)
     path('',views.login),
     path('loginresponse',views.loginresponse),
-    path('home/',views.home)
+    path('home/',views.home),
+   # path('treeresponse',views.treeresponse),
+    # path('thankyou',views.thankyoucall)
+    # path('storedata',views.storedata)
 ]
 
